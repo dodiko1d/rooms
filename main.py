@@ -18,7 +18,10 @@ while True:
                 window[f'room_{other_index}'].update(visible=False)
                 window[f'room_changer_{other_index}'].update(button_color=('#ffffff', '#212121'))
         if event == f'room_{index}_turn_on':
-            window
+            window[f'room_{index}_light'].update(button_color=('#212121', '#FFF176'))
+        if event == f'room_{index}_turn_off':
+            window[f'room_{index}_light'].update(button_color=('#212121', '#212121'))
+
 
 
 
