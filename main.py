@@ -14,7 +14,7 @@ while True:
         if event == f'room_changer_{index}':
             window[f'room_{index}'].update(visible=True)
             window[f'room_changer_{index}'].update(button_color=('#212121', '#69F0AE'))
-            for other_index in list({1, 2, 3} - {index}):
+            for other_index in list({1, 2, 3, 5} - {index}):
                 window[f'room_{other_index}'].update(visible=False)
                 window[f'room_changer_{other_index}'].update(button_color=('#ffffff', '#212121'))
         if event == f'room_{index}_turn_on':
